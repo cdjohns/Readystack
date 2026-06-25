@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: readystack-postgres
+    environment:
+      POSTGRES_USER: readystack
+      POSTGRES_PASSWORD: readystack
+      POSTGRES_DB: readystack_local
+    ports:
+      - "5432:5432"
+    volumes:
+      - readystack_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  readystack_postgres_data:
