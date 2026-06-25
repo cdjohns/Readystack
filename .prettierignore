@@ -1,0 +1,15 @@
+node_modules
+.pnpm-store
+.next
+dist
+build
+coverage
+pnpm-lock.yaml
+
+# Pre-existing prose docs authored before the formatting baseline was
+# introduced (RS-0004); not reformatted here to avoid unrelated diffs.
+CLAUDE.md
+docs/
+
+# Local, machine-specific Claude Code settings (not tracked by Git).
+.claude/settings.local.json
